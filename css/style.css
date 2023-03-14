@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: Sono;
+    src: url(../font/Sono-VariableFont_MONO,wght.ttf);
+}
+body{
+    background-image: URL("../img/me.png");
+    background-size: 800px auto;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: right;
+    margin-left: 15%;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-style: italic;
+    font-family: Sono;
+}
+.nav {
+    position:fixed;
+    margin-top: 0px;
+    background-color: black;
+    
+    }
+.button_nav
+	{
+	background-color:black; 
+	border: none;
+	color: white;
+	padding: 10px 40px;
+    display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+	transition-duration: 1s;
+    margin-left: 20px;
+	}
+.button_nav:hover{
+    background-color:white ;
+    color:rgb(170, 113, 7);
+}
+.content{
+    padding-top: 10%;
+    font-size: 18px;
+}
+.footer{
+ position: absolute;
+ bottom:0%;
+ right:0%;
+ font-size: small;
+}
