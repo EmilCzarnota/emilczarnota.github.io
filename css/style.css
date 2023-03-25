@@ -16,6 +16,9 @@ body{
     font-style: italic;
     font-family: Sono;
 }
+li{
+    list-style-type: none;
+}
 .nav {
     position:fixed;
     margin-top: 0px;
@@ -51,3 +54,35 @@ body{
  right:0%;
  font-size: small;
 }
+a:hover{
+    color: rgb(170, 113, 7);
+    font-weight: bold;
+}
+.text {
+    font-size: 14px;
+    width: 50%;
+}
+
+#aboutMe{
+    display:none;
+}
+#projectsContainer{
+    display:none;
+}
+#skillsContainer{
+    display: none;
+}
+#cvSkillsContent{
+    display:none;
+}
+#cvExperienceContent{
+    display:none;
+}
+#cvEducationContent{
+    display:none;
+}
+#cvProjectsContent{
+    display:none;
+}
+
+

@@ -6,35 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
+    <!--<script src="scripts/scripts.js" type="text/JavaScript"></script> -->
     <title>Emil Czarnota ¦ Web Developer</title>
     <header>
         <div class="nav">
-            <a href="#"><button class=button_nav>Home</button></a>
-            <a href="#"><button class=button_nav>About</button></a>
-            <a href="#"><button class=button_nav>Projects</button></a>
-            <a href="#"><button class=button_nav>Cv</button></a>
+            <a href="index.html"><button class=button_nav>Home</button></a>
+            <a href="#"><button class=button_nav id="emil">About</button></a>
+            <a href="#"><button class=button_nav id="projectsButton">Projects</button></a>
+            <a href="cv.html"><button class=button_nav>Cv</button></a>
         </div>
     </header>
 </head>
 <body>
     <div class="content">
         <h1> Hi!</h1>
-        <p>I am <b>Emil Czarnota.</b><br><br>
-    I am Website Developer based in Manchester UK.<br>
-    At the moment I am coding HTML, CSS, JS.<br><br>
-    Look at my <b>Projects</b> <br><br>
-    Something about <b>Me</b><br><br>
-    That's a <b>skills<b></b> what I can offer.
+        <p>I am <b><a id="emil">Emil Czarnota.</a></b></p>
+        <p class="text" id="aboutMe">My biggest passion is cycling. I am riding on MTB as well as on the road bike. Another passion is cooking. In the kitchen I like improvisation. I am not following the recepies. I am creating my own. And only 2 times I've been not able to eat my food ;) <br>
+        And of course coding is another thing what I really like. The opportunities in technology are endless. I haven't got large portfolio yet, but I hope it's gona be change soon. I've got lots of ideas and I am still learnig and growing exeprience.</p>
+        
+    <p>I am Website Developer based in Manchester UK. <br>
+    At the moment I am coding HTML, CSS, JS.<br><br></p>
+    
+    <p> Look at my <b><a id=projectsButton>Projects </a></b><br></p>
+        <p class="text" id="projectsContainer">There is not a lot here at the moment. But couple of projects are in progress. </p>
+        I can offer bundle of <b><a id="skillsButton">skills and knowledge.</a></b><br>
+    <p>
+       <ul class="text" id="skillsContainer">
+        <dt>HTML</dt>
+        <dt>CSS</dt>  
+        <dt>JavaScript</dt>
+            <dd>-Document Object Model (DOM)</dd>
+            <dd>-Interactive Web Content</dd>
+            <dd>-Responsive Web Design</dd>
+        <dt>Git & GitHub</dt>
+            <dd>-Team work</dd>
+            <dd>-Project Tracking</dd>
+        <dt>Comunication</dt>
+            <dd>-English and Polish languages</dd>
+            <dd>-Both written and spoken</dd>
+        </ul>    
+            
+    
+    </p>
+   
     </div>
-    <!--<div class="me">
-        <img src="img/me.png" alt="Photo of me">
-    </div>
--->
+  
+
+
 
 
 </p>
+<script src="scripts/scripts.js" type="text/JavaScript"></script>
 </body>
 <footer class="footer">
     Created By Emil Czarnota
 </footer>
+
 </html>
