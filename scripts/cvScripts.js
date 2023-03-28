@@ -35,3 +35,4 @@ cvProjectsButton.addEventListener("click", function(){
     cvProjectsContent.style.display = "block"}
     else{cvProjectsContent.style.display = "none"}
 })
+

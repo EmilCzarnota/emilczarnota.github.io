@@ -4,11 +4,11 @@
     src: url(../font/Sono-VariableFont_MONO,wght.ttf);
 }
 body{
-    background-image: URL("../img/me.png");
-    background-size: 800px auto;
+    /*background-image: URL("../img/meColor.jpg");
+    background-size: 500px auto;
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-position: right;
+    background-position: right;*/
     margin-left: 15%;
     color: white;
     background-color: black;
@@ -19,11 +19,44 @@ body{
 li{
     list-style-type: none;
 }
+
 .nav {
-    position:fixed;
-    margin-top: 0px;
-    background-color: black;
     
+    position:fixed;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    background-color: black;
+    align-items: center;
+    margin-left: 20%;
+    text-align:center;
+    opacity: 70%;}
+.navSideBar{
+    position: fixed;
+    left: 0px;
+    top: 30%;
+    height: fit-content;
+    }
+.sideButton{
+    display:block;
+    background-color:aqua;
+    
+}
+
+.photo{
+    margin-right: 15%;
+}
+#photoMe { 
+    width: 300px;
+    height: auto;
+    right:100px;
+    float:right;
+    border-radius: 10px;
+    display:block;
+    
+    
+       
     }
 .button_nav
 	{
@@ -39,24 +72,34 @@ li{
     font-family:Arial, Helvetica, sans-serif;
 	transition-duration: 1s;
     margin-left: 20px;
+    
 	}
 .button_nav:hover{
     background-color:white ;
-    color:rgb(170, 113, 7);
+    color:rgb(0, 4, 255);
 }
 .content{
     padding-top: 10%;
     font-size: 18px;
 }
 .footer{
- position: absolute;
- bottom:0%;
- right:0%;
+ position: static;
+ margin-top: 10%;
+ bottom:0px;
+ margin-right:0%;
  font-size: small;
 }
+
+a{
+    font-size:22px;
+    color: rgb(0, 255, 255);
+    transition-duration: 0.6s;
+}
 a:hover{
-    color: rgb(170, 113, 7);
+    color: rgb(0, 4, 255);
     font-weight: bold;
+    transition-duration: 0.8s;
+    cursor: pointer;
 }
 .text {
     font-size: 14px;
@@ -82,6 +125,16 @@ a:hover{
     display:none;
 }
 #cvProjectsContent{
+    display:none;
+}
+#mailFooter{
+    font-size: small;
+}
+#github{
+    display:none;
+}#linkedin{
+    display:none;
+}#email{
     display:none;
 }
 
