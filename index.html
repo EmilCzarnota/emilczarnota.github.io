@@ -10,7 +10,7 @@
     <!--<script src="scripts/scripts.js" type="text/JavaScript"></script> -->
     <title>Emil Czarnota ¦ Web Developer</title>
     <header>
-        <div class="nav">
+        <div class="nav" id="navBar">
             <a href="index.html"><button class=button_nav>Home</button></a>
             <a href="cv.html"><button class=button_nav>  Cv  </button></a>
         </div>
@@ -19,22 +19,23 @@
 
 <body>
 <div class="navSideBar">
-    <a href="https://github.com/EmilCzarnota" target="_blank" ><button class="sideButton" id="githubButton" ><b id="github">GitHub </b> <img width="40px" height="auto"  src="icons/github.svg"></button></a><br>
-    <a href="https://www.linkedin.com/in/emilczarnota/" target="_blank"> <button class="sideButton" id="linkedinButton"><b id = "linkedin"> LinkedIn </b><img width="40px" height="auto" src="icons/linkedin.svg"></button></a><br>
-   <a href="mailto:czarnotaemil@gmail.com?subject=Portfolio website"><button class="sideButton" id="emailButton"  >  <b id="email">E-Mail </b><img width="40px" height="auto" src="icons/at-solid.svg"></button></a><br>
+    <a href="https://github.com/EmilCzarnota" target="_blank" ><button class="sideButton" id="githubButton" ><div id="github">GitHub </div> <img width="40px" height="auto"  src="icons/github.svg"></button></a><br>
+    <a href="https://www.linkedin.com/in/emilczarnota/" target="_blank"> <button class="sideButton" id="linkedinButton"><div id = "linkedin"> LinkedIn </div><img width="40px" height="auto" src="icons/linkedin.svg"></button></a><br>
+   <a href="mailto:czarnotaemil@gmail.com?subject=Portfolio website"><button class="sideButton" id="emailButton"  >  <div id="email">E-Mail </div><img width="40px" height="auto" src="icons/at-solid.svg"></button></a><br>
 </div>
     <div class="content">
 
-            
+            <div class="photo">
+            <img id="photoMe" src="img/meColor.jpg"><br>
+</div>
 
     
         <h1> Hi!</h1>
-<aside>
- <div class="photo">
-            <img id="photoMe" src="img/meColor.jpg">
-</div>
-</aside>
+
+
+
         <p>I am <b><a id="emil">Emil Czarnota.</a></b></p>
+
         <p class="text" id="aboutMe">My biggest passion is cycling. I am riding on MTB as well as on the road bike. I also feel good when I am hiking,
             Another passion is cooking. In the kitchen I like improvisation. I am not following the recepies. I am
             creating my own. And only 2 times I've been not able to eat my food ;) <br>
@@ -46,8 +47,10 @@
             At the moment I am coding HTML, CSS, JS.<br><br></p>
 
         <p> Look at my <b><a id=projectsButton>Projects </a></b><br></p>
-        <p class="text" id="projectsContainer">There is not a lot here at the moment. But couple of projects are in
-            progress. </p>
+        <p class="text" id="projectsContainer">
+            There is not a lot here at the moment. But couple of projects are in
+            progress. 
+        </p>
         I can offer bundle of <b><a id="skillsButton">skills and knowledge.</a></b><br>
         <p>
         <ul class="text" id="skillsContainer">

@@ -29,6 +29,7 @@ emilButton.addEventListener("click", function(){
   else{
     aboutMeContainer.style.display = "none"
     photoMe.src="img/meColor.jpg";
+    photoMe.style.display = "block"
     
   }
 });
@@ -41,17 +42,17 @@ let projectsButton = document.getElementById("projectsButton");
 //in text project button
 projectsButton.addEventListener("click", function(){
   let projectsContainer = document.getElementById("projectsContainer");
-  let photoMe = document.getElementById("photoMe");
-
-  photoMe.src="img/projects.png"
+  let photoMe = document.getElementById("photoMe")
+  
+  
   if(projectsContainer.style.display === "none"){
     projectsContainer.style.display = "block"
-    
+    photoMe.src="img/projects.png"
     
   }
   else{
     projectsContainer.style.display = "none";
-   
+    photoMe.src="img/meColor.jpg"
     
   }
 })
@@ -95,3 +96,23 @@ linkedinButton.addEventListener("mouseout", function(){
  emailButton.addEventListener("mouseout", function(){
    document.getElementById("email").style.display = "none"
   })
+/*
+  let navBar = document.getElementById("navBar");
+
+document.body.addEventListener("scroll", function (){
+  navBar.style.display = "none";
+})
+
+*/
+// Initial state
+var scrollPos = 0;
+// adding scroll event
+document.addEventListener('scroll', function(){
+  // detects new state and compares it with the new one
+  if ((document.body.getBoundingClientRect()).top > scrollPos)
+		document.getElementById("navBar").style.display = "block";
+	else
+		document.getElementById("navBar").style.display = "none";
+	// saves the new position for iteration.
+	scrollPos = (document.body.getBoundingClientRect()).top;
+});
