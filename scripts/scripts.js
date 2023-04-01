@@ -18,10 +18,12 @@ emilButton.addEventListener("mouseout", function(){
 emilButton.addEventListener("click", function(){
   let aboutMeContainer = document.getElementById("aboutMe");
   let photoMe = document.getElementById("photoMe");  
-  
+  let photoMeMobile = document.getElementById("photoMeMobile");
+
   if(aboutMeContainer.style.display === "none"){
     aboutMeContainer.style.display = "block"
     photoMe.src="img/jaHike.png";
+    photoMeMobile.src="img/jaHike.png";
     
 
     
@@ -29,7 +31,8 @@ emilButton.addEventListener("click", function(){
   else{
     aboutMeContainer.style.display = "none"
     photoMe.src="img/meColor.jpg";
-    photoMe.style.display = "block"
+    photoMe.style.display = "block";
+    photoMeMobile.src="img/meColor.jpg";
     
   }
 });
@@ -46,7 +49,7 @@ projectsButton.addEventListener("click", function(){
   
   
   if(projectsContainer.style.display === "none"){
-    projectsContainer.style.display = "block"
+    projectsContainer.style.display = "block";
     photoMe.src="img/projects.png"
     
   }

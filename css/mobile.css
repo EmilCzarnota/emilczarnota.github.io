@@ -3,34 +3,15 @@
     font-family: Sono;
     src: url(../font/Sono-VariableFont_MONO,wght.ttf);
 }
-/*scroll bar */
-/* width */
-::-webkit-scrollbar {
-    width: 15px;
-    background-color: rgb(194, 177, 241);
-}
-/* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 5px;
-}
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(49, 73, 97);
-}
-  ::-webkit-scrollbar-button{
-    background-color: rgb(49, 73, 97);
-}
-html{
-    overflow-y: scroll;
-}
+
+
 body{
     background-image: URL("../img/background.png");
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
     margin-left: 10%;
-    margin-right:15%;
+    margin-right:10%;
     color: white;
     background-color: rgb(49, 73, 97);
     font-size: 16px;
@@ -38,92 +19,86 @@ body{
     font-family: Sono; 
 }
 .content{
-    padding-top: 10%;
+    padding-top: 50px;
     font-size: 18px;
     
+
+    
 }
-  
+ul{
+    margin-left: -10%;
+}
+
 li{
     list-style-type: none;
 }
 
 .nav {
-    
+    background-color: rgb(255, 255, 255);
     position:fixed;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: -10%;
     margin-right: auto;
     width: 100%;
     align-items: center;
     text-align:center;
     float:none;
+    
     }
-.navMobileSideBar{
-    display: none;
-}
 .navSideBar{
-    position: fixed;
-    left: 0px;
-    top: 30%;
-    height: fit-content;
+    display: none;
     }
 
 .sideButton{
-    display:block;
+    display:inline-block;
     background-color:rgb(208, 231, 247);
     border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    
-    
-}
+    border-radius: 15px;
+    text-align: justify;
 
-.photo{
-    margin-right: 10%;
 }
-#photoMe { 
-    position:static;
-    width: 400px;
-    height: 557px;
-    right:20%;
-    top:100px;
-    float:right;
-    border-radius: 30px;
+.navMobileSideBar{
+    margin-top: 90px;
+    margin-left: -15%;
+    margin-right: -25%;
+    padding-left: 10%;
+    padding-right: 17% ;
+    padding-top: 20px;
+    display: inline-block;
+    border-top: solid;
+    width: 100%;
+    border-color: white;
+
     
-    padding: 20px;
 }
-.photoMeMobile{
+.photo{
     display: none;
 }
+
+
      
 .button_nav
 	{
-	background: transparent;
+	
 	border: none;
-  	color: rgb(255, 255, 255);
+  	color: rgb(49, 73, 97);
 	padding: 10px 40px;
     display: inline-block;
 	text-align: center;
 	text-decoration: none;
 	font-size: 22px;
     font-family: Sono, sans-serif;
-	transition-duration: 1s;
-    margin-left: 0px;
-    font-style: normal;
-
-    
+	margin-left: 0px;
+    font-style: normal;   
 	}
-.button_nav:hover{
-    background-color:rgb(49, 73, 97);
-    color:white;
-}
+
+
 .footer{
  position: static;
  margin-top: 10%;
  bottom:0px;
  margin-right:0%;
  font-size: small;
- 
 }
 
 a{
@@ -133,19 +108,23 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: rgb(207, 153, 91);
-    font-weight: bold;
-    transition-duration: 0.8s;
-    cursor: pointer;
+    font-size:22px;
+    color: rgb(0, 255, 255);
+    
+    text-decoration: none;
 }
+
 .text {
     font-size: 14px;
-    width: 50%;
+    width: 100%;
+    margin-left: 5%;
     
+ 
+ 
     
 }
 .textCv{
-width: 90%;  
+width: 100%;  
 font-size:14px;
 }
 
@@ -155,33 +134,25 @@ font-size:14px;
 
 #aboutMe{
     display:none;
-   
     
 }
 #projectsContainer{
     display:none;
-   
 }
 #skillsContainer{
     display: none;
-  
 }
 #cvSkillsContent{
     display:none;
-   
 }
 #cvExperienceContent{
     display:none;
-  
 }
 #cvEducationContent{
     display:none;
-    
 }
 #cvProjectsContent{
     display:none;
-  
-
 }
 #mailFooter{
     font-size: small;
@@ -193,6 +164,12 @@ font-size:14px;
 }#email{
     display:none;
 }
-#projectsMobile{
-    display:none;
+.photoMeMobile{
+    display: block;
 }
+#projectsMobile{
+    display:block;
+}
+
+
+

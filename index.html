@@ -7,13 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
     <!--<script src="scripts/scripts.js" type="text/JavaScript"></script> -->
     <title>Emil Czarnota ¦ Web Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <header>
         <div class="nav" id="navBar">
             <a href="index.html"><button class=button_nav>Home</button></a>
             <a href="cv.html"><button class=button_nav>  Cv  </button></a>
+            
         </div>
+
     </header>
 </head>
 
@@ -41,15 +47,22 @@
             creating my own. And only 2 times I've been not able to eat my food ;) <br>
             And of course coding is another thing what I really like. The opportunities in technology are endless. I
             haven't got large portfolio yet, but I hope it's gona be change soon. I've got lots of ideas and I am still
-            learnig and growing exeprience.</p>
+            learnig and growing exeprience.
+            <div  class="photoMeMobile">
+            <img id="photoMeMobile" width="100%" src="img/meColor.jpg">
+            </div>
+            </p>
 
         <p>I am Website Developer based in Manchester UK. <br>
             At the moment I am coding HTML, CSS, JS.<br><br></p>
 
-        <p> Look at my <b><a id=projectsButton>Projects </a></b><br></p>
+        <p> Look at my <b><a id="projectsButton">Projects </a></b><br></p>
         <p class="text" id="projectsContainer">
             There is not a lot here at the moment. But couple of projects are in
-            progress. 
+            progress.
+            
+            <img id="projectsMobile" width="100%" src="img/projects.png">
+            
         </p>
         I can offer bundle of <b><a id="skillsButton">skills and knowledge.</a></b><br>
         <p>
@@ -79,7 +92,13 @@
 
     </p>
     <script src="scripts/scripts.js" type="text/JavaScript"></script>
-</body>
+<div class="navMobileSideBar">
+                <a href="https://github.com/EmilCzarnota" target="_blank" ><button class="sideButton" id="githubButton" ><div id="github">GitHub </div> <img width="30px" height="30px"  src="icons/github.svg"></button></a>
+    <a href="https://www.linkedin.com/in/emilczarnota/" target="_blank"> <button class="sideButton" id="linkedinButton"><div id = "linkedin"> LinkedIn </div><img width="30px" height="30px" src="icons/linkedin.svg"></button></a>
+   <a href="mailto:czarnotaemil@gmail.com?subject=Portfolio website"><button class="sideButton" id="emailButton"  >  <div id="email">E-Mail </div><img width="30px" height="30px" src="icons/at-solid.svg"></button></a>
+
+            </div>
+        </body>
 <footer class="footer">
     Created By <a id="mailFooter" href="mailto:czarnotaemil@gmail.com?subject=Portfolio website">Emil Czarnota</a>
 </footer>
