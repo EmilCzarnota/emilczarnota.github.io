@@ -7,66 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
-    <!--<script src="scripts/scripts.js" type="text/JavaScript"></script> -->
+    <!--<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css"> -->
+
     <title>Emil Czarnota ¦ Web Developer</title>
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <header>
-        <div class="nav" id="navBar">
-            <a href="index.html"><button class=button_nav>Home</button></a>
-            <a href="cv.html"><button class=button_nav>  Cv  </button></a>
-            
-        </div>
+
 
     </header>
 </head>
 
 <body>
-<div class="navSideBar">
-    <a href="https://github.com/EmilCzarnota" target="_blank" ><button class="sideButton" id="githubButton" ><div id="github">GitHub </div> <img width="40px" height="auto"  src="icons/github.svg"></button></a><br>
-    <a href="https://www.linkedin.com/in/emilczarnota/" target="_blank"> <button class="sideButton" id="linkedinButton"><div id = "linkedin"> LinkedIn </div><img width="40px" height="auto" src="icons/linkedin.svg"></button></a><br>
-   <a href="mailto:czarnotaemil@gmail.com?subject=Portfolio website"><button class="sideButton" id="emailButton"  >  <div id="email">E-Mail </div><img width="40px" height="auto" src="icons/at-solid.svg"></button></a><br>
-</div>
-    <div class="content">
+    <div class="leftBox">
+        <img src="img/meColor.jpg" id="meColor">
+        <img src="img/jaHike.png"  id="hikePhoto">
+        <img src = "img/projects.png" id="projectsPhoto">
+        <img src="img/emil.png" id="emilFrame">
+    </div>
+    <div class="rightBox">
 
-            <div class="photo">
-            <img id="photoMe" src="img/meColor.jpg"><br>
-</div>
+        <p id="aboutMeContainer">
+            Hi, I am Emil Czarnota.<br><br>
 
-    
-        <h1> Hi!</h1>
+            I am Website Developer based in Manchester UK. <br>
+            At the moment I am coding HTML, CSS, JS.<br><br>
 
-
-
-        <p>I am <b><a id="emil">Emil Czarnota.</a></b></p>
-
-        <p class="text" id="aboutMe">My biggest passion is cycling. I am riding on MTB as well as on the road bike. I also feel good when I am hiking,
+            My biggest passion is cycling. I am riding on MTB as well as on the road bike. I also
+            feel good when I am hiking,
             Another passion is cooking. In the kitchen I like improvisation. I am not following the recepies. I am
             creating my own. And only 2 times I've been not able to eat my food ;) <br>
             And of course coding is another thing what I really like. The opportunities in technology are endless. I
-            haven't got large portfolio yet, but I hope it's gona be change soon. I've got lots of ideas and I am still
+            haven't got large portfolio yet, but I hope it's gona be change soon. I've got lots of ideas and I am
+            still
             learnig and growing exeprience.
-            <div  class="photoMeMobile">
-            <img id="photoMeMobile" width="100%" src="img/meColor.jpg">
-            </div>
-            </p>
-
-        <p>I am Website Developer based in Manchester UK. <br>
-            At the moment I am coding HTML, CSS, JS.<br><br></p>
-
-        <p> Look at my <b><a id="projectsButton">Projects </a></b><br></p>
-        <p class="text" id="projectsContainer">
+        </p>
+        <p id="projectsContainer">
             There is not a lot here at the moment. But couple of projects are in
             progress.
-            
-            <img id="projectsMobile" width="100%" src="img/projects.png">
-            
+
         </p>
-        I can offer bundle of <b><a id="skillsButton">skills and knowledge.</a></b><br>
         <p>
-        <ul class="text" id="skillsContainer">
+        <ul id="skillsContainer">
             <dt>HTML</dt>
             <dt>CSS</dt>
             <dt>JavaScript</dt>
@@ -80,27 +62,138 @@
             <dd>-English and Polish languages</dd>
             <dd>-Both written and spoken</dd>
         </ul>
-
-
         </p>
+    </div>
+    <div class="cvContainer">
+        <div class="textCv">
+            <h1 style="text-align:center">EMIL CZARNOTA</h1>
+            <div style="text-align:center"><a href=mailto:czarnotaemil@gmail.com>czarnotaemil@gmail.com</a><br><a
+                    href="http://www.linkedin.com/in/emilczarnota" target="_blank">LinkedIn Profile</a></div>
+            <p>Trustworthy person who enjoys challenges and learning new skills. Self-motivated with great attention to
+                detail. Able to work individually and as a part of the team. Years of experience in time pressured
+                environment led to develop good prioritizing skills.</p>
+<button class="cvButton" id=cvSkillsButton><h2>SKILLS</h2></button>
+            <div id="cvSkillsContent">
+                <ul>
+                    <li>Basic programming knowledge including HTML, CSS, Python 3, JavaScript.</li>
+                    <li>Microsoft Office including Word, Excel, Power Point and Outlook.</li>
+                    <li>Perfect time management with ability to multi- task effectively and prioritize workload.</li>
+                    <li>Bilingual: Polish & English.</li>
+                </ul>
+            </div>
+ <button class="cvButton" id="cvExperienceButton"><h2>EXPERIENCE</h2> </button>
+            <div id="cvExperienceContent">
+                <ul>
+                    <dt><b>AMNESTY FLOOR MONITOR, PICKER, PICK INSTRUCTOR</b></dt>
+                    <dd>AMAZON UK May 2020 – Present</dd>
+                    <p>Started as a Picker, promoted to pick instructor. After 10 months joined Amnesty Floor Monitor
+                        department.</p>
 
+                    <dt>
+                        <h5>Amnesty Floor Monitor:</h5>
+                    </dt>
+
+                    <dd> • Attended and recovered faulted drive units on the Amazon Robotic Floor.</dd>
+                    <dd> • Removed basic issues on the Amazon Robotic Semi-Automated Workstations (ARSAW).</dd>
+                    <dd> • Monitored conveyer belts and removed blockages.</dd>
+                    <dd> • Kept a close contact with Reliability and Maintenance Engineering Team (RME) to ensure steady
+
+                        workflow at the stations.</dd>
+                    <dd> • Prioritized tasks to ensure high productivity on other departments.</dd>
+                    <dt>
+                        <h5> Pick instructor:</h5>
+                    </dt>
+                    <dd> • Ensured steady workflow at the process by sharing knowledge with associates.</dd>
+                    <dd> • Created positive and friendly work environment for all associates.</dd>
+                    <dd> • Supported new and existing associates with their day-to-day problems.</dd>
+                    <dd> • Helped Managers and Team Leaders to communicate their expectations with the associates.</dd>
+                    <dt>
+                        <h5> Picker:</h5>
+                    </dt>
+                    <dd> • Maintaining good housekeeping of the work area.</dd>
+                    <dd> • Ensuring excellent quality and productive picking.</dd>
+                    <dd> • Achieving best results in safety audits.</dd>
+                    <h3> BAR MANAGER</h3>
+                    <h4> LAS IGUANAS, UK July 2018 – October 2020 </h4>
+                    <ul>
+                        <li>• Completed daily checks, ensured paperwork was available during audits.</li>
+                        <li>• Completed regular bar inventories and daily requisition sheets.</li>
+                        <li>• Followed First In First Out rules.</li>
+                        <li>• Delivered exceptional service by greeting and serving customers in a timely and friendly
+                            manner.</li>
+                        <li>• Helped with the bar training for new staff.</li>
+                    </ul>
+                    <h3>DEPUTY MANAGER</h3>
+                    <h4>PIANKA, POLAND December 2017 – June 2018</h4>
+                    <ul>
+                        <li>• Created weekly and monthly forecasts.</li>
+                        <li>• Resolved customer issues and complaints.</li>
+                        <li>• Provided detailed monthly departmental reports and updates to senior management.</li>
+                    </ul>
+                </ul>
+            </div>
+
+<button class="cvButton" id="cvEducationButton"><h2>EDUCATION</h2></button>
+            <div id="cvEducationContent">
+                <ul>
+                    <dt>Higher Engineering School of Work Safety and Organization</dt>
+                    <dd><b>Bachelor of Engineering - Environmental engineering with specialization sanitary
+                            installation</b></dd>
+                    <dd>Radom, Poland 2016</dd><br>
+                    <dt>High School</dt>
+                    <dd>Pionki, Poland 2010</dd><br>
+                    <dt>A-Levels:</dt>
+                    <dd>English, Mathematics, Physics, Polish</dd><br>
+                    <dt>CERTIFICATIONS (available upon request)</dd>
+
+                    <dd><b>HTML, CSS</b></dt>
+                    <dd>www.itonlinelearning.com</dd>
+                    <dd><b>JAVASCRIPT, PYTHON 3, Git&GitHub, COMMAND LINE</b></dt>
+                    <dd>www.codecademy.com</dd>
+                </ul>
+            </div>
+
+<button class="cvButton" id="cvProjectsButton"><h2>PROJECTS</h2></button>
+            <div id="cvProjectsContent">
+                <ul>
+                    <dt><b>KEEP DOOR CLOSED</b></dt>
+                    <dd><i>AMAZON, UK</i> (In progress)</dd>
+                    <dd>Worked in cooperation with Health and Safety department to improve new workstations to avoid
+                        injuries on
+                        the Pick department. Introduced own idea to use magnetic tape to ensure the doors are secured
+                        and closed,
+                        minimizing the risk of Associates backing into open door or falling down the stair. Provided
+                        detailed cost
+                        break down.</dd>
+                </ul>
+                <ul>
+                    <dt><b>AMNESTY TOOL</b></dt>
+                    <dd><i>AMAZON UK 2022</i></dd>
+                    <dd>Created a HTML/CSS file containing necessary hyperlinks and websites to help and facilitate
+                        running shift in
+                        absence of Amnesty Team Leader. File is easy to use and saves time on set up. It provides all
+                        required
+                        information needed to monitor Amazon Robotic Floor Health and workflow on the conveyor belts. It
+                        includes shortcuts to generate data for End of Shift Report. </dd>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navStart" id="navBar">
+        <button class=button_nav id="aboutMeButton">About Me</button>
+        <button class=button_nav id="projectsButton">My Projects</button>
+        <button class=button_nav id="skillsButton">Skills and Knowledge</button>
+        <button class=button_nav id="cvButton">My Cv</button>
+    </div>
+    <div class="navSideBar">
+        <a href="https://github.com/EmilCzarnota" target="_blank" ><button class="sideButton" id="githubButton" > <img width="40px" height="auto"  src="icons/github.svg"><div id="github">GitHub </div></button></a><br>
+        <a href="https://www.linkedin.com/in/emilczarnota/" target="_blank"> <button class="sideButton" id="linkedinButton"><img width="40px" height="auto" src="icons/linkedin.svg"><div id = "linkedin"> LinkedIn </div></button></a><br>
+       <a href="mailto:czarnotaemil@gmail.com?subject=Portfolio website"><button class="sideButton" id="emailButton"  ><img width="40px" height="auto" src="icons/at-solid.svg"><div id="email">E-Mail </div></button></a><br>
     </div>
 
 
 
-
-
-    </p>
     <script src="scripts/scripts.js" type="text/JavaScript"></script>
-<div class="navMobileSideBar">
-                <a href="https://github.com/EmilCzarnota" target="_blank" ><button class="sideButton" id="githubButton" ><div id="github">GitHub </div> <img width="30px" height="30px"  src="icons/github.svg"></button></a>
-    <a href="https://www.linkedin.com/in/emilczarnota/" target="_blank"> <button class="sideButton" id="linkedinButton"><div id = "linkedin"> LinkedIn </div><img width="30px" height="30px" src="icons/linkedin.svg"></button></a>
-   <a href="mailto:czarnotaemil@gmail.com?subject=Portfolio website"><button class="sideButton" id="emailButton"  >  <div id="email">E-Mail </div><img width="30px" height="30px" src="icons/at-solid.svg"></button></a>
-
-            </div>
-        </body>
-<footer class="footer">
-    Created By <a id="mailFooter" href="mailto:czarnotaemil@gmail.com?subject=Portfolio website">Emil Czarnota</a>
-</footer>
+</body>
 
 </html>

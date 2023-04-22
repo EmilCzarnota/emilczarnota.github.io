@@ -1,121 +1,290 @@
-let emilButton = document.getElementById("emil");
+let navBar = document.getElementById("navBar");
+let buttonNav = document.querySelector (".button_nav");
+let navSideBar = document.querySelector(".navSideBar");
 
-/*
-replacement for a:hover 
+let meColor = document.getElementById("meColor");
+let photoFrame = document.getElementById("emilFrame");
 
-emilButton.addEventListener("mouseover",function(){
-  emilButton.style.color="rgb(0,4,255)";
-  emilButton.style.fontWeight = "bold";
-  emilButton.style.transitionDuration = "0.8s";
-  emilButton.style.cursor="pointer";
-})
-
-emilButton.addEventListener("mouseout", function(){
-  emilButton.style.color="rgb(0,255,255)";
-})
-*/
-
-emilButton.addEventListener("click", function(){
-  let aboutMeContainer = document.getElementById("aboutMe");
-  let photoMe = document.getElementById("photoMe");  
-  let photoMeMobile = document.getElementById("photoMeMobile");
-
-  if(aboutMeContainer.style.display === "none"){
-    aboutMeContainer.style.display = "block"
-    photoMe.src="img/jaHike.png";
-    photoMeMobile.src="img/jaHike.png";
-    
-
-    
-  }
-  else{
-    aboutMeContainer.style.display = "none"
-    photoMe.src="img/meColor.jpg";
-    photoMe.style.display = "block";
-    photoMeMobile.src="img/meColor.jpg";
-    
-  }
-});
-
-
-//projects hide and show
-let projectsButton = document.getElementById("projectsButton");
-
-
-//in text project button
-projectsButton.addEventListener("click", function(){
-  let projectsContainer = document.getElementById("projectsContainer");
-  let photoMe = document.getElementById("photoMe")
-  
-  
-  if(projectsContainer.style.display === "none"){
-    projectsContainer.style.display = "block";
-    photoMe.src="img/projects.png"
-    
-  }
-  else{
-    projectsContainer.style.display = "none";
-    photoMe.src="img/meColor.jpg"
-    
-  }
-})
-
-//skills button
-let skillsButton=document.getElementById("skillsButton");
+let aboutMeContainer = document.getElementById("aboutMeContainer");
+let projectsContainer = document.getElementById("projectsContainer");
 let skillsContainer = document.getElementById("skillsContainer");
+let textCv = document.querySelector(".textCv");
+let cvContainer = document.querySelector(".cvContainer");
 
+
+
+let h = navBar.getBoundingClientRect().top
+let resolutionY = window.innerHeight;
+let resolutionX = window.innerWidth;
+let leftBox = document.querySelector(".leftBox");
+let rightBox = document.querySelector(".rightBox");
+//nav buttons
+
+
+
+photoHeight = 0
+
+//open animation
+window.addEventListener("beforeunload",function(){
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+} )
+document.querySelector("html").style.overflow = "hidden"
+setTimeout(function(){
+  navBar.style.top = "90vh"
+  navBar.style.transition = "0.5s"
+    }, 500);
+setTimeout(function(){navBar.style.top = "50vh"}, 1000);
+setTimeout(function(){navBar.style.top = "90vh"}, 1500);
+setTimeout(function(){
+  navBar.style.borderRadius = "0%"
+  navBar.style.width = "100%"
+  navBar.style.margin= "0% 0%"}, 1700);
+setTimeout(function(){navSideBar.style.opacity="1"}, 1800)
+
+
+setTimeout(function(){
+  aboutMeButton.style.opacity = "1",
+  aboutMeButton.style.display = "inline-block";
+    }, 1800)
+setTimeout(function(){
+  projectsButton.style.opacity = "1",
+  projectsButton.style.display = "inline-block";
+    }, 2000)
+setTimeout(function(){
+  skillsButton.style.opacity = "1",
+  skillsButton.style.display = "inline-block";
+    }, 2200)
+setTimeout(function(){
+  cvButton.style.opacity = "1",
+  cvButton.style.display = "inline-block";
+    }, 2400)
+setTimeout(function(){
+  photoFrame.style.opacity = "1"
+  meColor.style.height = "60vh"
+    }, 1800)
+setTimeout(function(){
+    aboutMeContainer.style.opacity = "1";
+    }, 2200)
+
+
+//animation done
+
+//navigation buttons
+let aboutMeButton = document.getElementById("aboutMeButton");
+let projectsButton = document.getElementById("projectsButton");
+let skillsButton = document.getElementById("skillsButton");
+let cvButton = document.getElementById("cvButton");
+let hikePhoto = document.getElementById("hikePhoto");
+let projectsPhoto = document.getElementById("projectsPhoto");
+
+aboutMeButton.addEventListener("mouseover", function(){
+  aboutMeButton.style.backgroundColor = "white";
+  aboutMeButton.style.color = "black";
+  aboutMeButton.style.fontWeight = "bold";
+})
+aboutMeButton.addEventListener("mouseout", function(){
+  aboutMeButton.style.backgroundColor = null;
+  aboutMeButton.style.color = null;
+  aboutMeButton.style.fontWeight = null;
+})
+aboutMeButton.addEventListener("click", function(){
+  navBar.style.top = "90vh";
+  navBar.style.transition = "1s";
+  leftBox.style.top = null;
+  leftBox.style.opacity = null;
+  rightBox.style.opacity = null;
+  rightBox.style.top = null;
+  aboutMeContainer.style.opacity = "1";
+  projectsContainer.style.opacity = "0";
+  skillsContainer.style.opacity = "0";
+  cvContainer.style.top = "100%";
+  document.querySelector("html").style.overflow = "hidden"
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  projectsPhoto.style.height = "0";
+  hikePhoto.style.height = "0";
+  meColor.style.height = "60vh";
+
+
+})
+
+
+
+
+projectsButton.addEventListener("mouseover", function(){
+  projectsButton.style.backgroundColor = "white";
+  projectsButton.style.color = "black";
+  projectsButton.style.fontWeight = "bold";
+})
+projectsButton.addEventListener("mouseout", function(){
+  projectsButton.style.backgroundColor = null;
+  projectsButton.style.color = null;
+  projectsButton.style.fontWeight = null;
+})
+projectsButton.addEventListener("click", function(){
+  navBar.style.top = "90vh";
+  navBar.style.transition = "1s";
+  leftBox.style.top = null;
+  rightBox.style.top = null;
+  leftBox.style.opacity = null;
+  rightBox.style.opacity = null;
+  aboutMeContainer.style.opacity = "0";
+  projectsContainer.style.opacity = "1";
+  skillsContainer.style.opacity = "0";
+  cvContainer.style.top = "100%";
+  document.querySelector("html").style.overflow = "hidden"
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  projectsPhoto.style.height = "60vh";
+  hikePhoto.style.height = "0";
+  meColor.style.height = "0";
+  
+})
+skillsButton.addEventListener("mouseover", function(){
+  skillsButton.style.backgroundColor = "white";
+  skillsButton.style.color = "black";
+  skillsButton.style.fontWeight = "bold";
+})
+skillsButton.addEventListener("mouseout", function(){
+  skillsButton.style.backgroundColor = null;
+  skillsButton.style.color = null;
+  skillsButton.style.fontWeight = null;
+})
 skillsButton.addEventListener("click", function(){
-  if(skillsContainer.style.display === "none"){
-    skillsContainer.style.display = "block"}
-    else{skillsContainer.style.display = "none"}
+  navBar.style.top = "90vh";
+  navBar.style.transition = "1s";
+  leftBox.style.top = null;
+  rightBox.style.top = null;
+  leftBox.style.opacity = null;
+  rightBox.style.opacity = null;
+  aboutMeContainer.style.opacity = "0";
+  projectsContainer.style.opacity = "0";
+  skillsContainer.style.opacity = "1";
+  cvContainer.style.top = "100%";
+  document.querySelector("html").style.overflow = "hidden"
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  projectsPhoto.style.height = "0";
+  hikePhoto.style.height = "60vh";
+  meColor.style.height = "0";
+  
+  
 })
 
 
-// side nav bar scripts
-
-let gitHubButton=document.getElementById("githubButton");
-
-gitHubButton.addEventListener("mouseover", function(){
- document.getElementById("github").style.display = "inline"
+cvButton.addEventListener("mouseover", function(){
+  cvButton.style.backgroundColor = "white";
+  cvButton.style.color = "black";
+  cvButton.style.fontWeight = "bold";
 })
-gitHubButton.addEventListener("mouseout", function(){
-  document.getElementById("github").style.display = "none"
- })
-
- let linkedinButton=document.getElementById("linkedinButton");
-
-linkedinButton.addEventListener("mouseover", function(){
- document.getElementById("linkedin").style.display = "inline"
+cvButton.addEventListener("mouseout", function(){
+  cvButton.style.backgroundColor = null;
+  cvButton.style.color = null;
+  cvButton.style.fontWeight = null;
 })
-linkedinButton.addEventListener("mouseout", function(){
-  document.getElementById("linkedin").style.display = "none"
- })
+cvButton.addEventListener("click", function(){
+  navBar.style.top = "0%";
+  navBar.style.transition = "1s";
+  navBar.style.position = "fixed"
+  leftBox.style.opacity = "0";
+  leftBox.style.transition = "1s";
+  rightBox.style.opacity = "0";
+  rightBox.style.transition = "1s";
+  cvContainer.style.top = "10%";
+  document.querySelector("html").style.overflow = "auto"
 
- let emailButton=document.getElementById("emailButton");
 
- emailButton.addEventListener("mouseover", function(){
-  document.getElementById("email").style.display = "inline"
- })
- emailButton.addEventListener("mouseout", function(){
-   document.getElementById("email").style.display = "none"
+})
+//end of nav panel
+//side nav panel
+  let github = document.getElementById("github");
+  let linkedin = document.getElementById("linkedin");
+  let email = document.getElementById("email");
+  let githubButton = document.getElementById("githubButton");
+  let linkedinButton = document.getElementById("linkedinButton");
+  let emailButton = document.getElementById("emailButton");
+  
+  githubButton.addEventListener("mouseover", function(){
+    github.style.width = "100px";
+    github.style.height = "20px";
   })
-/*
-  let navBar = document.getElementById("navBar");
+  githubButton.addEventListener("mouseout", function(){
+    github.style.width = null;
+    github.style.height = null;
+  })
+  linkedinButton.addEventListener("mouseover", function(){
+    linkedin.style.width = "100px";
+    linkedin.style.height = "20px";
+  })
+  linkedinButton.addEventListener("mouseout", function(){
+    linkedin.style.width = null;
+    linkedin.style.height = null;
+  })
+  emailButton.addEventListener("mouseover", function(){
+    email.style.width = "100px";
+    email.style.height = "20px";
+  })
+  emailButton.addEventListener("mouseout", function(){
+    email.style.height = null;
+    email.style.width = null;
+    
+  })
 
-document.body.addEventListener("scroll", function (){
-  navBar.style.display = "none";
+
+//cv navigation
+let cvSkillsContent=document.getElementById("cvSkillsContent")
+let cvSkillsButton=document.getElementById("cvSkillsButton")
+let cvExperienceContent=document.getElementById("cvExperienceContent")
+let cvExperienceButton=document.getElementById("cvExperienceButton")
+let cvEducationButton=document.getElementById("cvEducationButton")
+let cvEducationContent=document.getElementById("cvEducationContent")
+let cvProjectsButton=document.getElementById("cvProjectsButton")
+let cvProjectsContent=document.getElementById("cvProjectsContent")
+
+
+cvSkillsButton.addEventListener("click", function(){
+  if(cvSkillsContent.style.opacity == 0){
+    cvSkillsContent.style.opacity = "1"
+    cvSkillsContent.style.height = "auto";
+  }
+  else{
+    cvSkillsContent.style.opacity = 0
+    cvSkillsContent.style.height = 0;
+  }
 })
 
-*/
-// Initial state
-var scrollPos = 0;
-// adding scroll event
-document.addEventListener('scroll', function(){
-  // detects new state and compares it with the new one
-  if ((document.body.getBoundingClientRect()).top > scrollPos)
-		document.getElementById("navBar").style.display = "block";
-	else
-		document.getElementById("navBar").style.display = "none";
-	// saves the new position for iteration.
-	scrollPos = (document.body.getBoundingClientRect()).top;
-});
+cvExperienceButton.addEventListener("click", function(){
+  if(cvExperienceContent.style.opacity == 0){
+    cvExperienceContent.style.opacity = "1"
+    cvExperienceContent.style.height = "auto";
+  }
+  else{
+    cvExperienceContent.style.opacity = 0
+    cvExperienceContent.style.height = 0;
+  }
+})
+
+cvEducationButton.addEventListener("click", function(){
+  if(cvEducationContent.style.opacity == 0){
+    cvEducationContent.style.opacity = "1"
+    cvEducationContent.style.height = "auto";
+  }
+  else{
+    cvEducationContent.style.opacity = 0
+    cvEducationContent.style.height = 0;
+  }
+})
+
+cvProjectsButton.addEventListener("click", function(){
+ 
+  if(cvProjectsContent.style.opacity == 0){
+    cvProjectsContent.style.opacity = "1"
+    cvProjectsContent.style.height = "auto";
+  }
+  else{
+    cvProjectsContent.style.opacity = 0
+    cvProjectsContent.style.height = 0;
+  }
+})
+//end of cv scripts
